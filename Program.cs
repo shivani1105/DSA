@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DSA;
+using System;
+using System.Globalization;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 class Program
@@ -15,6 +17,20 @@ class Program
 
         Console.WriteLine("\nSorted array:");
         PrintArray(array);
+
+        int[] array1 = { 10, 7, 8, 9, 1, 5 };
+
+        // Create a new instance of Sorter
+        QSAlgo sorter = new QSAlgo();
+
+        Console.WriteLine("Given Array:");
+        sorter.PrintArray(array1);
+
+        // Apply QuickSort
+        sorter.QuickSort(array1, 0, array1.Length - 1);
+
+        Console.WriteLine("\nSorted Array:");
+        sorter.PrintArray(array1);
     }
 
     static void MergeSort(int[] array, int left, int right)
