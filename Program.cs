@@ -1,6 +1,8 @@
 ﻿using DSA;
 using System;
+using System.Collections.Concurrent;
 using System.Globalization;
+using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 class Program
@@ -25,6 +27,9 @@ class Program
 
         Console.WriteLine("Given Array:");
         sorter.PrintArray(array1);
+
+        //Average case:O(n log n)
+        //Worst case: O(n²)(when the pivot ends up as the smallest or largest element, resulting in unbalanced partitions)
 
         // Apply QuickSort
         sorter.QuickSort(array1, 0, array1.Length - 1);
