@@ -23,6 +23,8 @@ class Program
         Console.WriteLine("\nAfter Merge sort array:");
         mergesorter.PrintArray(array);
 
+
+
         int[] array1 = { 10, 7, 8, 9, 1, 5 };
 
         // Create a new instance of Sorter
@@ -39,6 +41,26 @@ class Program
 
         Console.WriteLine("\nAfter Quick sort Array:");
         quicksorter.PrintArray(array1);
+
+
+        int[] array2 = { 2, 3, 4, 10, 40 };
+        int target = 10;
+
+        // Create an instance of Searcher
+        BinarySearchAlgo binarySearcher = new BinarySearchAlgo();
+
+        Console.WriteLine("Array:");
+        foreach (int num in array2)
+        {
+            Console.Write(num + " ");
+        }
+        Console.WriteLine();
+
+        // Perform Binary Search
+        int result = binarySearcher.BinarySearch(array2, 0, array2.Length - 1, target);
+
+        // Print the result
+        binarySearcher.PrintResult(result, target);
     }
 
 }
