@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSA
 {
-    public class QSAlgo
+    public class QuickSortAlgo
     {
         // Function that implements QuickSort
         public void QuickSort(int[] array, int low, int high)

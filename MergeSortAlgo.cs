@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSA
 {
-    public class MSAlgo
+    public class MergeSortAlgo
     {
         public void MergeSort(int[] array, int left, int right)
         {

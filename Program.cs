@@ -10,7 +10,7 @@ class Program
     static void Main(string[] args)
     {
         // Create a new instance of Sorter
-        MSAlgo mergesorter = new MSAlgo();
+        MergeSortAlgo mergesorter = new MergeSortAlgo();
 
         int[] array = { 12, 11, 13, 5, 6, 7 };
         Console.WriteLine("Given array:");
@@ -26,7 +26,7 @@ class Program
         int[] array1 = { 10, 7, 8, 9, 1, 5 };
 
         // Create a new instance of Sorter
-        QSAlgo quicksorter = new QSAlgo();
+        QuickSortAlgo quicksorter = new QuickSortAlgo();
 
         Console.WriteLine("Given Array:");
         quicksorter.PrintArray(array1);
