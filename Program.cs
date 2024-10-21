@@ -61,6 +61,26 @@ class Program
 
         // Print the result
         binarySearcher.PrintResult(result, target);
+
+
+
+        // Create an instance of Hasher
+        Hasher hasher = new Hasher();
+
+        // Add some data to the hash table (dictionary)
+        hasher.AddData(101, "Alice");
+        hasher.AddData(102, "Bob");
+        hasher.AddData(103, "Charlie");
+        hasher.AddData(104, "David");
+
+        Console.WriteLine("All Data in the Dictionary:");
+        hasher.DisplayAllData();
+
+        Console.WriteLine("\nSearching for key 102:");
+        hasher.SearchByKey(102);
+
+        Console.WriteLine("\nSearching for key 105:");
+        hasher.SearchByKey(105);
     }
 
 }
