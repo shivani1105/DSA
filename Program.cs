@@ -102,6 +102,26 @@ class Program
         int target3 = 6;
         int[] result3 = solution.TwoSum(nums3, target3);
         Console.WriteLine($"Indices: [{result3[0]}, {result3[1]}]");
+
+
+        // Create an instance of the LongestPalindromicSubstring class
+        LongestPalindromicSubstring lps = new LongestPalindromicSubstring();
+
+        // Test case 1
+        string s1 = "babad";
+        Console.WriteLine($"Longest Palindromic Substring in '{s1}' is: {lps.LongestPalindrome(s1)}");
+
+        // Test case 2
+        string s2 = "cbbd";
+        Console.WriteLine($"Longest Palindromic Substring in '{s2}' is: {lps.LongestPalindrome(s2)}");
+
+        // Test case 3
+        string s3 = "a";
+        Console.WriteLine($"Longest Palindromic Substring in '{s3}' is: {lps.LongestPalindrome(s3)}");
+
+        // Test case 4
+        string s4 = "ac";
+        Console.WriteLine($"Longest Palindromic Substring in '{s4}' is: {lps.LongestPalindrome(s4)}");
     }
 
 }
